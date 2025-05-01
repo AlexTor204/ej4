@@ -41,23 +41,23 @@ body {
 }
 
 /* logo */
-.__logo {
+.header__logo, .footer__logo {
     flex: 1;
     font-size: 3rem;
     padding: 0rem 1rem;
     align-content: center;
 }
 
-.__logo a {
+.header__logo a, .footer__logo a {
     text-decoration: none;
     color: white;
     transition: color 0.2s ease;
 }
-.__logo a:hover {
+.header__logo a:hover, .footer__logo a:hover {
     color: black;
 }
 /* navegacion */
-.__nav {
+.header__nav, .footer__nav {
     flex: 1;
     align-content: center;
 }
@@ -132,7 +132,7 @@ body {
 .rightSide {
     width: 100%;
     height: 40vh;
-    background-image: url("./images/image1.webp");
+    background-image: url("../images/image1.webp");
     background-position: center;
     background-size: cover;
     overflow: visible;
@@ -218,9 +218,11 @@ body {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    background-color: #0f8fa1;
+    background-color: #8e63c5;
+    box-shadow: 5px 5px 10px 5px rgba(155, 0, 193, 40%);
+    border-radius: 2rem;
     position: relative;
-    margin: 1rem;
+    margin: 1rem 1rem 4rem 1rem;
     padding: 1rem;
     gap: 1rem;
 }
@@ -232,7 +234,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("./images/image2.webp");
+    background-image: url("../images/image2.webp");
     border-radius: 7rem;
     transition: all 0.3s ease;
 }
@@ -254,7 +256,7 @@ body {
         position: absolute;
         width: 50%;
         max-width: 50rem;
-        height: 115%;
+        height: 125%;
         top: -8%;
         left: -2%;
     }
@@ -263,7 +265,8 @@ body {
     }
 }
 
-.banner {
+/* Footer */
+.footer {
     display: flex;
     padding: 1rem;
     color: white;
