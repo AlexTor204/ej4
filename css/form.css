@@ -34,13 +34,9 @@ body {
     transition: border-radius 0.3s ease;
 }
 
-.header, .footer {
-    flex: 1;
-}
 .main {
     display: flex;
     flex-flow: column wrap;
-    flex: 5;
     gap: 2rem;
 }
 
@@ -57,19 +53,19 @@ body {
     gap: 1rem;
 }
 
-.emailContainer, .passContainer, .buttonContainer {
+/* Contenedor email y password*/
+.inputContainer, .buttonContainer {
     width: 100%;
     font-size: 1.8rem;
 }
 
-/* Contenedor email y password*/
-.emailContainer, .passContainer {
+.inputContainer {
     display: flex;
     flex-flow: row wrap;
     gap: 0.5rem;
 }
 
-.emailContainer input, .passContainer input {
+.inputContainer input{
     width: 100%;
     max-width: 50rem;
     height: 3.5rem;
@@ -79,10 +75,10 @@ body {
     background-color: var(--bg-input);
     transition: border 0.2s ease;
 }
-.emailContainer input:hover, .passContainer input:hover {
+.inputContainer input:hover, .inputContainer input:focus {
     border: 1px solid white;
 }
-.emailContainer input:focus, .passContainer input:focus {
+.inputContainer input:focus {
     outline: none;
 }
 
@@ -113,7 +109,6 @@ body {
 }
 
 /* Legenda 'create account' */
-
 .noAcc {
     display: flex;
     text-align: center;
@@ -135,7 +130,6 @@ body {
 }
 
 /* Boton 'Create account' */
-
 .createAcc {
     flex-grow: 1;
     align-content: center;
@@ -145,6 +139,7 @@ body {
 .createAcc button {
     max-width: 20rem;
 }
+
 /* Footer */
 
 .footer {
@@ -156,18 +151,13 @@ body {
 /* ajustamos el formato a viewport width completo */
 @media (max-width: 458px) {
     body {
-        height: 100vh;
         padding: 0;
     }
     .container {
         border-radius: 0;
-        height: 100%;
     }
-}
 
-/* Ajustamos la altura para evitar romper el diseño */
-@media (max-height: 830px) {
-    body {
-        height: auto;
+    .form {
+        padding: 1rem 1.5rem;
     }
 }

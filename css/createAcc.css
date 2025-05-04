@@ -1,0 +1,11 @@
+.nameContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+@media (max-width: 458px) {
+    .nameContainer {
+        flex-flow: row wrap;
+    }
+}
